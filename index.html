@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliors SL</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<header>
+   
+</header>
+<body>
+    <style>
+        .banner{color:white; position: absolute; top:30%; width: 100%; text-align: center; font-family: Merriweather; font-size: 6rem;}
+    </style>
+
+<h1 class="banner">Juliors SL-App</h1>
+    
+    <div class="search">
+    <form class="form-group">
+    <input type="text" class="form-control" placeholder="Sök hållplats..." autocomplete="off"id="search">
+    <br>
+    <br>
+    <input type="button" class="btn btn-danger " value="Sök" onclick="GetStopAreaIdWithName()">
+    <div class="myload">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    </form>
+    </div>
+
+    <hr>
+    <br>
+    <div id="overview">
+    <table class="table table-danger table-bordered table-hover w-50" id="table">
+    <thead>
+    <tr>
+    <th>Linje Nummer</th>
+    <th>Destination</th>
+    <th>Avgångstid</th>
+    <th>Färdsätt</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+</tbody>
+
+</table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
